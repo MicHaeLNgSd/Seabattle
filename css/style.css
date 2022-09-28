@@ -1,0 +1,347 @@
+html{
+    background-color: skyblue;
+}
+
+header{
+    justify-content: space-between;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 50px;
+    padding: 10px 0 10px 20px;
+}
+
+.langSelector {
+    cursor: pointer;
+    font-size: 20px;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+.lang-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    width: 80px;
+}
+
+.lang
+{
+  background: url('https://icons.iconarchive.com/icons/wikipedia/flags/32/UA-Ukraine-Flag-icon.png') no-repeat left center;
+  padding-left: 40px;
+}
+
+.lang-content a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.lang-content #a1{
+    background: url('https://icons.iconarchive.com/icons/wikipedia/flags/32/UA-Ukraine-Flag-icon.png') no-repeat left center;
+    
+}
+.lang-content #a2{
+    background: url('https://icons.iconarchive.com/icons/wikipedia/flags/32/US-United-States-Flag-icon.png') no-repeat left center;
+}
+
+.langSelector:hover .lang-content {
+    display: block;
+}
+
+
+main{
+    padding-top: 3%;
+    display: flex;
+    
+    max-width: 80%;
+    margin: auto;
+}
+
+.myArea{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+.myArea .player{
+    text-align: end;
+}
+
+/* .player .nickname{
+    margin: 5px 10px 5px 10px;
+    width: max-content;
+    font-size: 25px;
+} */
+
+.player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 19%;
+  }
+  
+  .nickname {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 3vw;
+  }
+
+
+.battlefield{
+    aspect-ratio: 1;
+    width: 100%;
+    /* width: 100%;
+    height:calc(width); */
+    border-collapse:collapse;
+	/* border-spacing:0; */
+}
+
+table tr,table td{
+    width: 10%;
+    height: 10%;
+}
+
+table tr td{
+    border: 2px solid black;
+}
+
+table th{
+    font-size: 1.5vw;
+}
+
+.check_ships{
+    position: relative;
+    width: 100%;
+    padding-bottom: 34.3%;
+  }
+  
+    .ships_content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+.ship-type{
+    width: calc(100%-1vw);
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.myArea .ship-type{
+    justify-content: end;
+}
+
+.ship{
+    display: flex;
+    flex-direction: row;
+    margin: 1vw 1vw 0px 0px;
+}
+
+.ship-part{
+    height: 1vw;
+    width: 1vw;
+    display: block;
+    background-color: royalblue;
+}
+
+
+
+
+
+.middleArea{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 20%;
+    margin-inline: 5%;
+}
+
+.timer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 33.3%;
+    border: 2px solid black;
+    margin: -2px;
+    border-radius: 10px;
+  }
+  
+    .timer-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        font-size: 4vw;
+    }
+
+
+/* .timer{
+    aspect-ratio: 3 / 1;
+    width: 100%;
+    background-color: darkslategrey;
+} */
+
+.moves{
+    position: relative;
+    width: 90%;
+    padding-bottom: 160%;
+    border: 2px solid black;
+    margin: -2px;
+    border-radius: 10px;
+  }
+    .moves-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .moves-section{
+        height: 80%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .moves p{
+        padding: 0;
+        margin: 0;
+    }    
+
+.pl1Moves,.pl2Moves{
+    text-align: center;
+    /* padding: 5px; */
+    font-size: 1.5vw;
+    width: 50%;
+    height: 100%;
+    border-bottom: 2px solid black;
+}
+
+.moves .pl1Moves{
+    
+    border-right: 2px solid black;
+}
+.moves .pl2Moves{
+    width: 50%;
+}
+
+.buttons{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    height: 60%;
+    width: 60%;
+    font-size: 1.5vw;
+    background-color: lightslategray;
+    border-radius: 5px;
+}
+
+.buttons button:hover{
+    background-color: slategray;
+    cursor: pointer;
+}
+
+.chat{
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%;
+    border: 2px solid black;
+    margin: -2px;
+    border-radius: 10px;
+    }
+    
+    .chat-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+
+.enemyArea{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.messages{
+    height: 70%;
+    overflow: hidden;
+}
+
+.messages textarea{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    resize: none;
+    border: none;
+    font-size: 1.2vw;
+    padding-left: 10px;
+}
+
+.message-box textarea {
+    
+    cursor: pointer;
+    width: 90%;
+    height: 2vw;
+    font-size: 1.2vw;
+    padding-left: 5px;
+    padding-top: 10px;
+
+    resize: none;
+    border: none;
+
+    border-radius: 20px 0 0 20px; 
+}
+.message-box button{
+    cursor: pointer;
+    border: none;
+    height: 2vw;
+    border-radius: 0 20px 20px 0; 
+    background-color: lightslategray;
+}
+
+.message-box button:hover{
+    background-color: slategray;
+}
+
+.message-box {
+    margin: auto;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 90%;
+    height: 20%;
+    margin-top: 2.8%;
+    
+    border-radius: 20px; 
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+
+.myArea .battlefield td:hover{
+    background-color: gray;
+}
+
+.enemyArea .battlefield td:hover{
+    background-color: gray;
+}
